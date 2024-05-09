@@ -12,7 +12,7 @@ The objective is to build a simple platform to upload and view files:
 - View a file
 - Generate thumbnails for images
 
-You will be guided step by step for building it, but you have some freedoms of implementation, split in more files etc… (utils folder will be your friend)
+You will be guided step by step for building it, but you have some freedoms of implementation, split in more files etc… (`utils` folder will be your friend)
 
 Of course, this kind of service already exists in the real life - it’s a learning purpose to assemble each piece and build a full product.
 
@@ -155,7 +155,7 @@ module.exports = {
 };
 ```
 
-**and...**
+**and...**  
 Don't forget to run `$npm install` when you have the `package.json`
 
 ## Tasks
