@@ -1,3 +1,4 @@
+/* eslint-disable import/no-import-module-exports */
 /* eslint-disable jest/require-hook */
 import { Router } from 'express';
 import AppController from '../controllers/AppController';
