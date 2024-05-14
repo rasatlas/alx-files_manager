@@ -1,5 +1,5 @@
-import { createClient } from "redis";
-import { promisify } from "util";
+import { createClient } from 'redis';
+import { promisify } from 'util';
 
 // Redis client class
 class RedisClient {
@@ -8,7 +8,7 @@ class RedisClient {
    */
   constructor() {
     this.redisClient = createClient();
-    this.redisClient.on("error", (error) => {
+    this.redisClient.on('error', (error) => {
       console.log(error.message);
     });
   }
@@ -41,7 +41,7 @@ class RedisClient {
 
   async set(key, value, duration) {
     const asyncSet = promisify(this.redisClient.set).bind(this.redisClient);
-    await asyncSet(key, value, "EX", duration);
+    await asyncSet(key, value, 'EX', duration);
   }
 
   /**
